@@ -44,12 +44,9 @@ scanf("%d", &req[i]);
 }
 printf("Enter initial head position: ");
 scanf("%d", &head);
-printf("Enter disk size: ");
-scanf("%d", &disk_size);
-printf("Enter direction (1 for up, -1 for down): ");
-scanf("%d", &direction);
-sstf(req, n, head);
-scan(req, n, head, disk_size, direction);
+
+
+
 clook(req, n, head);
 return 0;
 }
@@ -60,12 +57,7 @@ gcc disk_scheduling.c -o disk_scheduling
 Enter number of requests: 8
 Enter request sequence: 176 79 34 60 92 11 41 114
 Enter initial head position: 50
-Enter disk size: 200
-Enter direction (1 for up, -1 for down): 1
-SSTF Seek Sequence: 41 60 34 79 92 114 176
-Total Seek Time (SSTF): 210
-SCAN Seek Sequence: 60 79 92 114 176 200 41 34 11 0
-Total Seek Time (SCAN): 390
+
 C-LOOK Seek Sequence: 60 79 92 114 176 41 34 11
 Total Seek Time (C-LOOK): 315
 */
