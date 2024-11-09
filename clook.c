@@ -33,7 +33,7 @@ return (*(int *)a - *(int *)b);
 }
 
 int main() {
-int n, i, head, disk_size, direction;
+int n, i, head;
 int req[100];
 printf("Enter number of requests: ");
 scanf("%d", &n);
