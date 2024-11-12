@@ -7,9 +7,9 @@ void bubble_sort(int arr[20],int n)
 {
  int i,j,temp;
  
- for( i=0;i<n;i++)
+ for( i=0;i<n-1;i++)
  {
-  for(j=0;j<n;j++)
+  for(j=1;j<n-1;j++)
   {
    if(arr[j]>arr[j+1])
    {
@@ -47,8 +47,7 @@ void fork1()
     for(int i=0;i<n;i++)
  {
   printf("%d",arr[i]);
-  printf("\b");printf("\n parent process ");                   
-    printf("\n parent process id=%d\n",getpid());      
+    
   }
   printf("\n parent process ");
     printf("\n parent process id=%d\n",getpid());
