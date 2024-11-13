@@ -30,9 +30,7 @@ printf("%d ", head);
 printf("\nTotal Seek Time (SSTF): %d\n", total_seek);
 }
 
-int cmpfunc(const void *a, const void *b){
-return (*(int *)a - *(int *)b);
-}
+
 
 int main() {
 int n, i, head, disk_size, direction;
