@@ -25,7 +25,7 @@ printf("%d ", head);
    printf("%d",head);
   }
      
-for (i = 0; i < l_count; i++)
+for (i = 1; i < l_count; i++)
 {
 total_seek += abs(head - left[i]);
 head = left[i];
