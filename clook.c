@@ -19,13 +19,8 @@ head = right[i];
 printf("%d ", head);
 }
 
-  if(l_count>0)
-  {total_seek+=abs(head-left[0]);
-   head=left[0];
-   printf("%d",head);
-  }
-     
-for (i = 1; i < l_count; i++)
+   
+for (i = l_count - 1; i >= 0; i--)
 {
 total_seek += abs(head - left[i]);
 head = left[i];
